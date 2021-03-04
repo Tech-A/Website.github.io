@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <meta charset="utf-8">
+        
+        <title>Travel Website</title>
+      </head>
+
+
+      
+      <body>
+<header>
+    <h1 style="text-align: center;">Travel the <i>(virtual)</i> globe</h1>
+    <h2 style="text-align: center;">Why should COVID stop you from having an adventure?</h2>
+
+    <div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">Home</a>
+              <a href="#">Country 1</a>
+              <a href="#">Country 2</a>
+              <a href="#">Country 3</a>
+            </div>
+          </div>
+        
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; Menu </span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+    </div>
+    <div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1600&h=800&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Feiffel-tower-paris-france-EIFFEL0217.jpg" width="100%" height="550px">
+              <div class="text"> Paris, France </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://i2.wp.com/www.smartertravel.com/wp-content/uploads/2019/07/taj-mahal.jpg?fit=1920%2C1080&ssl=1" width="100%" height="550px">
+              <div class="text"> Agra, India </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://www.nps.gov/common/uploads/grid_builder/stli/crop16_9/7DBAB193-E4E7-80BE-262BCF6D65A24D88.jpg?width=950&quality=90&mode=crop" width="100%" height="550px">
+              <div class="text"> New York, United States </div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); 
+            }
+            </script>
+            <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1600&h=800&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Feiffel-tower-paris-france-EIFFEL0217.jpg" width="100%" height="550px">
+      <div class="text"> Paris, France </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://i2.wp.com/www.smartertravel.com/wp-content/uploads/2019/07/taj-mahal.jpg?fit=1920%2C1080&ssl=1" width="100%" height="550px">
+      <div class="text"> Agra, India </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://www.nps.gov/common/uploads/grid_builder/stli/crop16_9/7DBAB193-E4E7-80BE-262BCF6D65A24D88.jpg?width=950&quality=90&mode=crop" width="100%" height="550px">
+      <div class="text"> New York, United States </div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); 
+    }
+    </script>
+    </div>
+</header>
+
+<div class="Intro">
+    <h3>Why you're here</h3>
+    <p>Maybe you had a flight booked to Canada, or Spain, or Rome, or Japan or a whole tour of Europe? Maybe you were meant to spend your Christmas break at your relative's house in the US? But instead, all those exciting ventures got cancelled and now you're bored out of your mind at home, sulking about where you could have been visiting instead. Well, you found the right place. <b>Our website provides insights to all your favourite countries, with photos of tourist attractions, descriptions, history and more.</b> It will make you feel like you're not missing out on anything at all.
+    <br>
+    <br>
+    <p>You can also try a fun <a target="_blank" href="https://www.sporcle.com/games/g/world">"Countries of the world quiz"</a> on Sporcle.com.</p>
+  </div>
+
+      </body>
+
+
+      <style>
+i 
+{text-transform: lowercase;}
+        .Intro{
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  font-size: 75px;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+h3 {
+    color:black;
+}
+         header {
+            background-color: teal;
+            padding: 55px;
+         }
+         body {
+             background-color: lightslategray;
+         }
+    
+
+         h2 {color:cadetblue}
+
+         .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+         }
+
+         .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+         }
+
+         .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+         }
+         .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+}
+
+         .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+         }
+
+         @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px;}
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+        
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+        
+</style>
+
+</html>
